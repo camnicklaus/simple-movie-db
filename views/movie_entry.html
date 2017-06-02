@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Movie entry form</title>
+	<!--<link rel="stylesheet" href="styles/main.css">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      background: lightblue;
+    }
+    form {
+      display: flex;
+      flex-flow: column;
+    }
+    form > * {
+      margin: 10px;
+      padding: 10px;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Movie Entry form</h1>
+
+  <form action="/movie_post" method="POST">
+    <input type="text" placeholder="movie title" name="title"/>
+    <input type="text" placeholder="release year" name="year"/>
+    <input type="text" placeholder="imdb reference" name="imdb"/>
+    <input type="submit" value="Submit"/>
+  </form>
+<a href="/movies"><button>see current movie database</button></a>
+	<!--<script src="scripts/main.js"></script>-->
+
+</body>
+
+</html>
