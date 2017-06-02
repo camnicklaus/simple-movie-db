@@ -1,7 +1,3 @@
-//type mongod in terminal to start mongodb server
-//to see if mondodb is running, in terminal type:  ps -ef | grep mongod | grep -v grep | wc -l | tr -d ' '
-
-//mongodb://camnicklaus:<PASSWORD>@cameron-shard-00-00-uetbd.mongodb.net:27017,cameron-shard-00-01-uetbd.mongodb.net:27017,cameron-shard-00-02-uetbd.mongodb.net:27017/<DATABASE>?ssl=true&replicaSet=cameron-shard-0&authSource=admin
 var express = require('express'),
     app = express(),
     engines = require('consolidate'),
