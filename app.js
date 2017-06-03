@@ -4,6 +4,7 @@ var express = require('express'),
     MongoClient = require('mongodb').MongoClient,  
     assert = require('assert'),
     bodyParser = require('body-parser'),
+    port = process.env.PORT || 3000,
     dotenv = require('dotenv');
 dotenv.load();
 var db_userName = process.env.DB_USERNAME;
@@ -84,7 +85,6 @@ MongoClient.connect(uri, function(err, db) {
 
 });
 
-var server = app.listen(3000, function() {
-  var port = server.address().port;
+var server = app.listen(port, function() {
   console.log('Express server listening on port %s', port);
 });
