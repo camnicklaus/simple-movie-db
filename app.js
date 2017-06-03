@@ -9,7 +9,7 @@ dotenv.load();
 var db_userName = process.env.DB_USERNAME;
 var db_password = process.env.DB_PASSWORD;
 var db_database = process.env.DB_DATABASE;
-var uri = `mongodb://${db_userName}:${db_password}@cameron-shard-00-00-uetbd.mongodb.net:27017,cameron-shard-00-01-uetbd.mongodb.net:27017,cameron-shard-00-02-uetbd.mongodb.net:27017/${db_database}?ssl=true&replicaSet=cameron-shard-0&authSource=admin`;
+var uri = `mongodb://${db_userName}:${db_password}@ds161041.mlab.com:61041/cameron_sandbox`;
 var newEntryId;
     
 app.engine('html', engines.nunjucks);
