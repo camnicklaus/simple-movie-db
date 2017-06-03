@@ -1,21 +1,29 @@
 {
-  "name": "hello_world",
+  "name": "create-movie-entries",
   "version": "1.0.0",
-  "description": "",
+  "description": "basic web app for inserting and reading movie entries using mongodb",
   "main": "app.js",
   "dependencies": {
     "assert": "^1.4.1",
     "body-parser": "^1.17.2",
-    "consolidate": "~0.13.1",
+    "consolidate": "^0.14.5",
     "dotenv": "^4.0.0",
-    "express": "~4.13.3",
-    "mongodb": "~2.1.3",
-    "nunjucks": "~2.2.0"
+    "express": "^4.15.3",
+    "mongodb": "^2.2.27",
+    "nunjucks": "^3.0.1"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camnicklaus/simple-movie-db.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camnicklaus/simple-movie-db/issues"
+  },
+  "homepage": "https://github.com/camnicklaus/simple-movie-db#readme"
 }

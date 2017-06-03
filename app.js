@@ -49,7 +49,7 @@ MongoClient.connect(uri, function(err, db) {
   assert.equal(null, err);
   console.log("Successfully connected to MonagoDB.");
 
-  app.get('*', function(req, res) {
+  app.get('/', function(req, res) {
     res.render('movie_entry');
   });
 
